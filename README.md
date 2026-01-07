@@ -7,8 +7,6 @@
 
 ```bash
 git clone https://github.com/Fderios/Taiga-analyzer.git
-cd Taiga-analyzer
-python setup.py
 ```
 
 ## Использование
@@ -22,7 +20,7 @@ taiga . -v               # Анализ директории"
 
 ## Удаление
 ```bash
-cd Taiga-analyzer
+cd ~/Taiga-analyzer
 python unsetup.py
 ```
 
