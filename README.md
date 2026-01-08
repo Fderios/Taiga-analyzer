@@ -7,6 +7,8 @@
 
 ```bash
 git clone https://github.com/Fderios/Taiga-analyzer.git
+cd Taiga-analyzer
+python setup.py
 ```
 
 ## Использование
