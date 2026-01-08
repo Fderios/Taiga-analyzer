@@ -14,6 +14,7 @@ def uninstall_taiga():
     removed = []
 
     script_path = home / ".local" / "bin" / "taiga"
+    git_path = Path.home() / "Taiga-analyzer"
     if script_path.exists():
         try:
             script_path.unlink()
@@ -88,13 +89,15 @@ def uninstall_taiga():
     else:
         print("️ Taiga не найден в домашней директории")
 
+    shutil.rmtree(git_path)
+
 
 
 def main():
     print("Удалить Taiga из домашней директории? [y/N]: ", end='')
     response = input().strip().lower()
 
-    if response in ['y', 'yes', 'д', 'да']:
+    if response in ['y', 'yes', 'д', 'да', 'Y', 'Д']:
         uninstall_taiga()
     else:
         print("Удаление отменено")
